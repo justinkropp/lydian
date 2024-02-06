@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div className="prose dark:prose-invert">
       {allPosts.map((post) => (
-        <article key={post._id}>
-          <Link href={post.slug}>
-            <h2>{post.title}</h2>
+        <article key={post._id} className="mb-10 p-0">
+          <Link href={post.slug} className="no-underline">
+            <h2 className="text-sm m-0">{post.title}</h2>
           </Link>
-          {post.description && <p>{post.description}</p>}
+          {post.description && <p className="text-sm m-0">{post.description}</p>}
         </article>
       ))}
     </div>

@@ -22,6 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
+<<<<<<< HEAD
         className={`antialiased min-h-screen ${GeistMono.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -30,8 +31,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="">
                 <ModeToggle />
                 <nav className="">
+=======
+        className={`antialiased min-h-screen bg-white dark:bg-[#111] text-[#333] dark:text-white ${GeistMono.className}`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="max-w-2xl p-10">
+            <header className="mb-10">
+              <div className="flex items-center justify-between">
+                <h1 className="text-sm ">Justin Kropp</h1>
+                <nav className="flex items-center justify-end text-sm space-x-5">
+>>>>>>> efba3f43a4f1005c03cd5f73fdf6a0eea44a9d8b
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
+                  <ModeToggle />
                 </nav>
               </div>
             </header>

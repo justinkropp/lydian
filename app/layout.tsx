@@ -22,14 +22,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased min-h-screen bg-white dark:bg-[#111] text-[#333] dark:text-white ${GeistMono.className}`}
+        className={`antialiased ${GeistMono.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-2xl p-10">
-            <header className="mb-10">
-              <div className="flex items-center justify-between">
-                <h1 className="text-sm ">Justin Kropp</h1>
-                <nav className="flex items-center justify-end text-sm space-x-5">
+          <div className="">
+            <header className="">
+              <div className="">
+                <h1 className="">Lydian</h1>
+                <nav className="">
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
                   <ModeToggle />
